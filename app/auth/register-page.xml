@@ -1,0 +1,14 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Register" />
+    <GridLayout class="page-background">
+        <StackLayout class="content-container p-4 m-4">
+            <Label text="Create Account" class="text-3xl text-center mb-4" />
+            <TextField hint="Email" text="{{ email }}" keyboardType="email" class="mb-2 p-2 border rounded" />
+            <TextField hint="Password" text="{{ password }}" secure="true" class="mb-2 p-2 border rounded" />
+            <TextField hint="Confirm Password" text="{{ confirmPassword }}" secure="true" class="mb-4 p-2 border rounded" />
+            <Button text="Register" tap="{{ onRegister }}" class="-primary mb-2" />
+            <Button text="Back to Login" tap="{{ onNavigateToLogin }}" class="-outline" />
+            <Label text="{{ errorMessage }}" class="text-red-500 text-center" textWrap="true" />
+        </StackLayout>
+    </GridLayout>
+</Page>
