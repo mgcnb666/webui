@@ -1,53 +1,50 @@
-# NativeScript Authentication App
-
-一个使用 NativeScript 构建的移动应用程序，具有登录和注册功能。
+### NativeScript Authentication App
 
 A mobile application built with NativeScript featuring login and registration functionality.
 
-## 功能 Features
+#### Features
+- **User Login**
+- **User Registration**
+- **Form Validation**
 
-- 用户登录 User Login
-- 用户注册 User Registration
-- 表单验证 Form Validation
+#### How to Use
 
-## 如何使用 How to Use
+**Login**
+1. After opening the app, you will see the login page.
+2. Enter your email and password.
+3. Click the "Login" button.
 
-### 登录 Login
-1. 打开应用后，您将看到登录页面
-2. 输入电子邮件和密码
-3. 点击"登录"按钮
+**Test Account:**
+- **Email:** test@test.com
+- **Password:** password
 
-测试账号 Test Account:
-- 邮箱 Email: test@test.com
-- 密码 Password: password
+**Registration**
+1. Click the "Register" button on the login page.
+2. Fill in the following information:
+   - **Email**
+   - **Password**
+   - **Confirm Password**
+3. Click the "Register" button.
 
-### 注册 Registration
-1. 在登录页面点击"注册"按钮
-2. 填写以下信息：
-   - 电子邮件 Email
-   - 密码 Password
-   - 确认密码 Confirm Password
-3. 点击"注册"按钮
+#### Development Notes
 
-## 开发说明 Development Notes
-
-### 项目设置 Project Setup
+**Project Setup**
 ```bash
-# 安装依赖 Install dependencies
+# Install dependencies
 npm install
 
-# 启动开发预览 Start development preview
+# Start development preview
 npm start
 ```
 
-### 项目结构 Project Structure
+**Project Structure**
 ```
 app/
 ├── auth/
-│   ├── login-page.xml      # 登录页面 UI
-│   ├── login-view-model.js # 登录页面逻辑
-│   ├── register-page.xml   # 注册页面 UI
-│   └── register-view-model.js # 注册页面逻辑
+│   ├── login-page.xml      # Login page UI
+│   ├── login-view-model.js  # Login page logic
+│   ├── register-page.xml    # Registration page UI
+│   └── register-view-model.js # Registration page logic
 ├── app-root.xml
 ├── app.css
 └── app.js
